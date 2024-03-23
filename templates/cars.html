@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<title>Парк автомобилей</title>
+	
+	</head>
+<body>
+	<nav>
+		<p><a href="/"> Главная </a>
+		<a href="/cars"> Наши автомобили </a>
+		<a href="/contacts"> Контакты </a></p>
+	</nav>
+	<h1 >Парк автомобилей</h1>
+	{% if auth_status_for_page %}
+	<button type="button" onclick="alert('Отличная работа!')">Забронировать</button>
+	{% endif %}<br>
+	<img src="{{ url_for('static', filename='images/civic1.jpg') }}" alt="html" height="100" width="150">
+		<h3>2700 руб/день</h3>
+		<h4> Honda Civic 2019 года</h4>
+		<p>Разгон до 100 км: за 10.6 сек</p>
+		<p>Тип кузова: седан, купе, пятидверный хэтчбек</p>
+		<p>Расход топлива: 3.3-17.6 л/100 км</p>
+		<p>Мощность: 140 л.с</p><hr/>
+
+{% if auth_status_for_page %}
+	<button type="button" onclick="alert('Отличная работа!')">Забронировать</button>
+	{% endif %}<br>
+	<img src="{{ url_for('static', filename='images/astra.jpg') }}" alt="html" height="100" width="150">
+		<h3>2500 руб/день</h3>
+		<h4> Opel Astra H 2018 года</h4>
+		<p>Разгон до 100 км: за 11.7 сек</p>
+		<p>Тип кузова: седан, купе</p>
+		<p>Расход топлива: 6.3 л - 8.8л/100 км</p>
+		<p>Мощность: 115 л.с</p><hr/>
+
+		{% if auth_status_for_page %}
+	<button type="button" onclick="alert('Отличная работа!')">Забронировать</button>
+	{% endif %}<br>
+	<img src="{{ url_for('static', filename='images/urus.jpg') }}" alt="html" height="100" width="150">
+		<h3>5000 руб/день</h3>
+		<h4> Lamborghini Urus 2020 года</h4>
+		<p>Разгон до 100 км: за 3,6 сек</p>
+		<p>Тип кузова: SUV</p>
+		<p>Расход топлива: от 12.6 до 14.1 л/100 км</p>
+		<p>Мощность: 650 л.с</p><hr/>
+		{% if auth_status_for_page %}
+	<button type="button" onclick="alert('Отличная работа!')">Забронировать</button>
+	{% endif %}<br>
+	<img src="{{ url_for('static', filename='images/priora.jpg') }}" alt="html" height="100" width="150">
+		<h3>2000 руб/день</h3>
+		<h4> LADA PRIORA 2018 года</h4>
+		<p>Разгон до 100 км: за 11.5 сек</p>
+		<p>Тип кузова: седан</p>
+		<p>Расход топлива: 6.6-9.8 л/100 км</p>
+		<p>Мощность: 80 л.с</p>
+	<footer>
+		<hr/>
+		<p>г. Санкт-Петербург</p>
+		<p>2023 год</p>
+	</footer>
+</body>
+</html>

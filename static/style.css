@@ -1,0 +1,18 @@
+
+
+body {
+	
+	background: Lavender;
+}
+nav {
+	text-align: center;
+	background: SkyBlue;
+}
+nav a {
+	
+	font-size: 20px;
+	padding: 20px 30px;
+}
+h1 {
+	text-align: center;
+}
